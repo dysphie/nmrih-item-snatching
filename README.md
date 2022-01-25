@@ -25,3 +25,11 @@ You can restrict item snatching via overrides. See [Command Overrides](https://w
 The relevant keys are:
 - `item_snatch_immunity` - Can't have their item snatched
 - `can_item_snatch` - Can't snatch other people's items
+
+Example config:
+```cpp
+Overrides
+{
+	"item_snatch_immunity"	"z"	// Root can't have their item snatched
+	"can_item_snatch"		"a"	// Only people with reservation flag can snatch items
+}```

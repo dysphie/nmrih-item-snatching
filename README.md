@@ -22,10 +22,14 @@ Saved to and read from `cfg/plugin.item-snatch.cfg`
 ## Immunity
 
 By default admins with the ban flag ("d") are immune to item snatching.
-Immunity can be globally via [Command Overrides](https://wiki.alliedmods.net/Overriding_Command_Access_(Sourcemod)#Global_Configuration) by specifying an `item_snatch_immunity` key in `configs/admin_overrides.cfg`, like so:
+Immunity can be globally reconfigured via [Command Overrides](https://wiki.alliedmods.net/Overriding_Command_Access_(Sourcemod)#Global_Configuration) 
+Simply add an `item_snatch_immunity` key to `configs/admin_overrides.cfg`, followed by the desired flag(s), like so:
 
 ```cpp
 Overrides
 {
 	"item_snatch_immunity"	"z"	// Restrict immunity to root
 }
+```
+
+Note that given an arbitrary number of flags, the client must require access to all specified flags in the string, as opposed to just any one of them.

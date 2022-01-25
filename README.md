@@ -17,3 +17,15 @@ https://user-images.githubusercontent.com/11559683/149901849-80af4ae6-afb7-4535-
 Saved to and read from `cfg/plugin.item-snatch.cfg`
 
 - `sm_item_snatch_enabled` (Default: `1`) - Enables or disables item snatching
+
+
+## Immunity
+
+By default admins with the ban flag ("d") are immune to item snatching.
+Immunity can be globally via [Command Overrides](https://wiki.alliedmods.net/Overriding_Command_Access_(Sourcemod)#Global_Configuration) by specifying an `item_snatch_immunity` key in `configs/admin_overrides.cfg`, like so:
+
+```cpp
+Overrides
+{
+	"item_snatch_immunity"	"z"	// Restrict immunity to root
+}

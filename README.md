@@ -32,4 +32,5 @@ Overrides
 {
 	"item_snatch_immunity"	"z"	// Root can't have their item snatched
 	"can_item_snatch"		"a"	// Only people with reservation flag can snatch items
-}```
+}
+```
